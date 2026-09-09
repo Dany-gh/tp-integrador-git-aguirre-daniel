@@ -2,13 +2,13 @@
 
 ## Datos del participante
 
-- Nombre y apellido:
-- Curso:
-- Fecha de entrega:
+- Nombre y apellido: Daniel A. Aguirre
+- Curso: introduccion a Git y GitHub para la Gestion de Proyectos Digitales.
+- Fecha de entrega: 09/09/26
 
 ## Enlaces
 
-- Repositorio de GitHub:
+- Repositorio de GitHub: https://github.com/Dany-gh/tp-integrador-git-aguirre-daniel.git
 - Issue:
 - Pull request:
 

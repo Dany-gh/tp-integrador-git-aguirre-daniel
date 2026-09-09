@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+  <title>Introducción a Git y GitHub</title>
+</head>
+<body>
+  <header>
+    <h1>Curso de Git y GitHub</h1>
+    <h2>Trabajo Practico Integrador de Git y GitHub</h2><br/>
+    Pasos a seguir
+  </header>
+
+  <main>
+    Comandos Usados:<br/>
+    pwd (me dice en que directorio estamos.)<br/>
+    /c/Users/Daniel/Personal/Cursos/2026/03_Git_&_GitHub/Trabajo Final<br/>
+
+    Creamos carpeta.<br/>
+    tp-integrador-git-aguirre-daniel<br/>
+    mkdir (crea carpeta)<br/>
+
+    mkdir tp-integrador-git-aguirre-daniel<br/>
+
+    cd (Cambia de Directorio)<br/>
+    cd tp-integrador-git-aguirre-daniel<br/>
+
+    pwd<br/>
+    /c/Users/Daniel/Personal/Cursos/2026/03_Git_&_GitHub/Trabajo Final/tp-integrador-git-aguirre-daniel<br/>
+
+    ls (lista lo que tenemos)<br/>
+
+    touch (crea un archivo vacio nombre_archivo.ext)<br/>
+
+    touch README.md<br/>
+    touch ENTREGA.md<br/>
+
+    ls -l<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  7 23:53 ENTREGA.md<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  7 23:53 README.md<br/>
+
+    Creo carpeta Proyecto.<br/>
+    mkdir proyecto<br/>
+
+    ls -l<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  7 23:53 ENTREGA.md<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  7 23:53 README.md<br/>
+    drwxr-xr-x 1 Daniel 197121 0 Sep  7 23:59 proyecto/<br/>
+
+    Ingreso a proyecto.<br/>
+    cd proyecto<br/>
+
+    pwd<br/>
+    /c/Users/Daniel/Personal/Cursos/2026/03_Git_&_GitHub/Trabajo Final/tp-integrador-git-aguirre-daniel/proyecto<br/>
+
+    Creo 2 Archivos.<br/>
+
+    touch index.html<br/>
+    touch styles.css<br/>
+
+    Veo directorio /proyecto.<br/>
+    ls -l<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  8 00:06 index.html<br/>
+    -rw-r--r-- 1 Daniel 197121 0 Sep  8 00:07 styles.css<br/>
+
+    <div class ="titulosNumericos"><p>8. Contenido obligatorio del archivo README.md</p></div>
+
+    <div class="titulosNumericos"><p>9. Contenido obligatorio del archivo ENTREGA.md</p></div>
+
+    <div class="titulosNumericos">10. Comandos mínimos que deben aparecer en el trabajo</div>
+    <p>El trabajo deberá evidenciar el uso de los siguientes comandos principales:</p>
+    git init<br/>
+    git status<br/>
+    git add<br/>
+    git commit<br/>
+    git log --oneline<br/>
+    git remote add origin<br/>
+    git remote -v<br/>
+    git push<br/>
+    git branch<br/>
+    git switch<br/>
+    git merge<br/>
+    git pull<br/>
+
+    También se aceptará el uso de:
+    git checkout<br/>
+    en lugar de git switch, siempre que el participante lo indique en el archivo ENTREGA.md.
+
+    <div class="titulosNumericos">11. Desarrollo mínimo esperado</div>
+    <p>El participante deberá realizar las siguientes acciones.</p>
+    <div class="titulosNumericos">11.1. Crear un repositorio local</div>
+    <p>Crear una carpeta de trabajo e inicializar Git.</p>
+    Comandos esperados:
+    git init
+    git status
+    <p>Cuando hago git init la rama principal le llama master y yo le quiero cambiar el nombre a main para eso hago.</p>
+
+    git branch -m master main
+
+    <p>
+    y ahora hago git branch para ver en que rama estoy.
+    Ahora estoy en la rama main.
+    </p>
+    Ahora vamos a pasar los archivos al área de stage.<br/>
+    Usando add .<br/>
+
+    git add .<br/>
+    <p>Ahora todas las filas y carpetas están en verde y pasaron del area de trabajo al área de stage.</p>
+
+    <div class="titulosNumericos">11.2. Crear la estructura inicial del proyecto</div>
+    <p>El repositorio deberá incluir:</p>
+    <ul>
+      <li>README.md;</li>
+      <li>ENTREGA.md;</li>
+      <li>una carpeta para el proyecto;</li>
+      <li>al menos un archivo dentro de esa carpeta.</li>
+    </ul>
+    Ejemplo:<br/>
+    proyecto/<br/>
+    ├── index.html<br/>
+    └── styles.css<br/>
+    <p>Ya está todo esto creado.</p>
+
+    <div class="titulosNumericos">11.3. Registrar cambios mediante commits</div>
+    <p>
+    El trabajo deberá tener como mínimo cinco commits.
+    Los mensajes de commit deben ser claros y representar cambios concretos.
+    </p>
+    Ejemplos adecuados:
+    <p>
+    git commit -m "Agregar estructura inicial del proyecto"<br/>
+    git commit -m "Completar descripción del proyecto en README"<br/>
+    git commit -m "Agregar archivos principales de la landing"<br/>
+    git commit -m "Crear rama para mejorar documentación"<br/>
+    git commit -m "Actualizar entrega con enlaces del repositorio"<br/>
+    No se consideran buenas prácticas mensajes genéricos como:<br/>
+    git commit -m "cambios"<br/>
+    git commit -m "cosas"<br/>
+    git commit -m "final"<br/>
+    </p>
+    <p>
+    Vamos a crear el primer commit.<br/>
+    git commit -m "Tiene la estructura inicial. Los archivos *.md sin datos, y los dos archivos del proyecto vacios"<br/>
+
+    Se realizo con éxito el commit<br/>
+
+    Hacemos<br/>
+    git status<br/>
+    nothing to commit, working tree clean<br/>
+
+    hacemos<br/>
+    git log<br/>
+    Me muestra el primer commit.<br/>
+    </p>
+    <div class="titulosNumericos">11.4. Publicar el repositorio en GitHub</div>
+    <p>
+    El participante deberá crear un repositorio público en GitHub y conectarlo con el repositorio local.<br/>
+    Comandos esperados:<br/>
+    git remote add origin URL_DEL_REPOSITORIO<br/>
+    git remote -v<br/>
+    git push -u origin main<br/>
+    Si la rama principal tiene otro nombre, deberá aclararlo en ENTREGA.md.<br/>
+    git remote add origin https://github.com/Dany-gh/tp-integrador-git-aguirre-daniel.git<br/>
+
+    Revisamos con<br/> 
+    git remote -v si está bien la dirección o url.<br/>
+
+    Hacemos el push (subir a remoto lo de local)
+    </p>
+  </main>
+</body>
+</html>
