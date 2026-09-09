@@ -1,6 +1,12 @@
+body {
+    font-size: 18px;
+}
+
 .titulosNumericos{
   color: blue;
+  font-size: 25px;
 }
 .SubTitulos{
-  color:rgb(4, 247, 24)
+  color:rgb(4, 247, 24);
+  font-size: 25px;
 }

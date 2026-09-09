@@ -31,7 +31,6 @@ Indicar los comandos utilizados durante el trabajo:
 
 ## Descripción del proceso
 
-Explicar en 5 a 8 líneas cómo se creó, versionó, publicó y documentó el proyecto.
 -Abrimos Git Bash
 -En el directorio que nos encontramos creamos con mkdir la carpeta tp-integrador-git-aguirre-daniel
  e ingresamos en ella con el comando cd.
@@ -69,6 +68,8 @@ Explicar en 5 a 8 líneas cómo se creó, versionó, publicó y documentó el pr
 -Creamos una ISSUE en remoto.
 -Creamos una rama para cumplir con lo solicitado en la issue.
   git switch -c mejoras_solicitadas
+-Despues subimos al repositorio remoto con las modificaciones, despues de hacer commit
+  git push -u origin mejoras_solicitadas
 
 ## Dificultades encontradas
 
